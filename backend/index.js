@@ -10,8 +10,9 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://talk-tok-backendd.onrender.com",
+    origin: "https://talk-tokk.vercel.app",
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
